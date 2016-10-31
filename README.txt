@@ -1,0 +1,1 @@
+For this project we were partnered up to recreate Twitter! It didn't have to be an exact replica to the real site but similar. Our objective was to create an MVC site that had models and controllers for the views. Styling wasn't necessary since it was a strech task and other login user information like Google + or Facebook was also extra credit. 

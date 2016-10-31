@@ -1,0 +1,49 @@
+﻿
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CODE THAT WAS GENERATED ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+.jumbotron{
+    text-align:center;
+    margin:0px;
+    background-color:#7998B2;
+    color:white;
+}
+.glyphicon{
+    font-size:90px;
+    transform: rotate(29deg);
+    word-wrap:break-word;
+}
+body{
+    background-color:lightgray;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ HOMEPAGE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#centerPost{
+    text-align:center;
+}
+#postText{
+    font-size:30px;
+}
+.center-block{
+    box-shadow: 6px 6px 8px #888888;
+    margin-bottom:10px;
+    background-color:white;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ CREATE ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/

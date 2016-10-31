@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DandJchatter.Models.Post>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@*<h2>Index</h2>*@
+
+<p>
+    @Html.ActionLink("Chatter!", "Create")
+</p>
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ApplicationUser.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Chat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeOfChat)
+        </th>
+        <th></th>
+    </tr>*@
+
+@foreach (var item in Model)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8" id="centerPost">
+                <div class="center-block">
+                    @Html.DisplayFor(model => item.ApplicationUser.UserName)
+                    <span id="postText">@Html.DisplayFor(modelItem => item.Chat)</span>
+                    <p>
+                    @Html.DisplayFor(modelItem => item.TimeOfChat)
+                    <br/>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.PostID })
+                    @*@Html.ActionLink("Details", "Details", new { id = item.PostID })*@
+                    @Html.ActionLink("Delete", "Delete", new { id = item.PostID })
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
